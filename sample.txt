@@ -1,2 +1,71 @@
- demo document use
+Habel Jacob@LAPTOP-VO63KEN8 MINGW64 ~/OneDrive/Desktop/gitfit (main)
+$ git clone https://github.com/HabelJacob0/sample.git
+Cloning into 'sample'...
+remote: Enumerating objects: 21, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 21 (delta 0), reused 0 (delta 0), pack-reused 14 (from 1)
+Receiving objects: 100% (21/21), 5.83 KiB | 1.46 MiB/s, done.
+
+Habel Jacob@LAPTOP-VO63KEN8 MINGW64 ~/OneDrive/Desktop/gitfit (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/Habel Jacob/OneDrive/Desktop/gitfit/.git/
+
+Habel Jacob@LAPTOP-VO63KEN8 MINGW64 ~/OneDrive/Desktop/gitfit (main)
+$ git add test.txt
+
+Habel Jacob@LAPTOP-VO63KEN8 MINGW64 ~/OneDrive/Desktop/gitfit (main)
+$ git add rule.txt
+
+Habel Jacob@LAPTOP-VO63KEN8 MINGW64 ~/OneDrive/Desktop/gitfit (main)
+$ git commit -m"commit changes"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        java/
+        sample/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Habel Jacob@LAPTOP-VO63KEN8 MINGW64 ~/OneDrive/Desktop/gitfit (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        java/
+        sample/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Habel Jacob@LAPTOP-VO63KEN8 MINGW64 ~/OneDrive/Desktop/gitfit (main)
+$ git push
+To https://github.com/HabelJacob0/testing.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/HabelJacob0/testing.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Habel Jacob@LAPTOP-VO63KEN8 MINGW64 ~/OneDrive/Desktop/gitfit (main)
+$ git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 11 (delta 6), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (11/11), 9.09 KiB | 404.00 KiB/s, done.
+From https://github.com/HabelJacob0/testing
+   278d351..35d0694  main       -> origin/main
+Updating 278d351..35d0694
+Fast-forward
+ test.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 test.txt
+
+Habel Jacob@LAPTOP-VO63KEN8 MINGW64 ~/OneDrive/Desktop/gitfit (main)
 
